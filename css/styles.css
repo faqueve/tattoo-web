@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;800;900&family=Roboto:ital,wght@0,100;0,300;0,500;0,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+.nav-bar{
+    background-color: #181818;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    align-items: center;
+
+}
+.nav-bar .logo{
+    width: 120px;
+    height: 120px;
+    grid-column: 2 / 3;
+}
+.nav-bar .link-logo{
+    grid-column: 2 / 3;
+}
+.nav-bar .menu{
+    grid-column: 4 / 7;
+    display: flex;
+    justify-content: space-around;
+}
+.nav-bar .menu li{
+    list-style: none;
+
+}
+.nav-bar .menu a{
+    text-decoration: none;
+    color: #e9d8a6;
+    cursor: pointer;
+    text-shadow: black 0.1em 0.1em 0.2em;
+}
+.nav-bar .menu a:hover{
+    color: #ffffff;
+}
+.nav-bar .menu-bar{
+    display: none;
+}
+
+/*SECTION MAIN  */
+.hero{
+    height: 80vh;
+    background-image: linear-gradient(rgba(16, 16,16, .8), rgba(16, 16,16, .8)), url(../img/fondo2.jpg);
+    background-size: cover;
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+
+}
+.hero .video{
+    border-radius: 1em;
+    grid-column: 2 / 3;
+    grid-row: 3 / 7;
+}
+
+
+.hero .info-content{
+    grid-column: 5 / 10;
+    grid-row: 3 / 7;
+    color: #e9d8a6;
+}
+
+.hero h3{
+    font-family: 'Montserat', sans-serif;
+    font-size: 1.5em;
+    font-weight: 300;
+    text-shadow: black 0.1em 0.1em 0.2em;
+}
+
+.hero h1{
+    font-size: 4em;
+    text-shadow: black 0.1em 0.1em 0.2em;
+    color: #005f73;
+}
+
+.hero p{
+    font-weight: 300;
+    font-family: 'Montserat', sans-serif;
+}
+
+.hero .btn{
+    font-size: 1em;
+    background: none;
+    color: #e9d8a6;
+    padding: 10px 20px;
+    border: 1px solid #005f73;
+    border-radius: 30px;
+    margin-top: 15px;
+}
+.hero .btn:hover{
+    background-color: #005f73;
+    color: #141414;
+}
+
+
+/*SECCION GALERÍA*/
+.gallery-container{
+    background-image: linear-gradient(rgba(16, 16,16, .8), rgba(16, 16,16, .8)), url(../img/fondo2.jpg);
+    background-size: cover;
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-auto-rows: 100px;
+    padding: 20px;
+    grid-gap: 10px;
+}
+.gallery__img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    box-shadow: black 0.1em 0.1em 0.2em;
+}
+
+.gallery-container h1{
+    display: flex;
+    align-items: center;
+    font-size: 2.5em;
+    text-shadow: black 0.1em 0.1em 0.2em;
+    color: #005f73;
+    text-align: center;
+}
+
+.gallery-container p{
+    display: flex;
+    align-items: center;
+    font-weight: 300;
+    font-family: 'Montserat', sans-serif;
+    color: #e9d8a6;
+    text-shadow: black 0.1em 0.1em 0.2em;
+    font-size: 15px;
+}
+
+/*SECCION CLIENTES*/
+.clientes-hero{
+    height: 80vh;
+    background-image: linear-gradient(rgba(16, 16,16, .8), rgba(16, 16,16, .8)), url(../img/fondo2.jpg);
+    background-size: cover;
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+}
+.clientes-hero .clientes-info-content{
+    grid-column: 3 / 10;
+    grid-row: 3 / 7;
+    color: #e9d8a6;
+}
+.clientes-hero h1{
+    font-size: 4em;
+    text-shadow: black 0.1em 0.1em 0.2em;
+    color: #005f73;
+}
+
+.clientes-hero p{
+    font-weight: 300;
+    font-family: 'Montserat', sans-serif;
+}
+
+/*SECCION CONTACTO*/
+.contacto-hero{
+    height: 80vh;
+    background-image: linear-gradient(rgba(16, 16,16, .8), rgba(16, 16,16, .8)), url(../img/fondo2.jpg);
+    background-size: cover;
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+}
+.contacto-hero .contacto-info-content{
+    grid-column: 3 / 10;
+    grid-row: 3 / 7;
+    color: #e9d8a6;
+}
+.contacto-hero h1{
+    font-size: 4em;
+    text-shadow: black 0.1em 0.1em 0.2em;
+    color: #005f73;
+}
+
+.clientes-hero p{
+    font-weight: 300;
+    font-family: 'Montserat', sans-serif;
+}
+
+
+/*SECTION FOOTER*/
+.footer{
+    display: grid;
+    height: 80px;
+    align-items: center;
+    background-color: #181818;
+    color: #e9d8a6;
+    grid-template-areas: 
+    "follow me social-network";
+}
+.footer .follow-me{
+    grid-template-areas: follow-me;
+    text-align: center;
+    grid-column: 2/3;
+}
+
+.footer .social-network{
+    grid-template-areas: social-network;
+    font-size: 1.5em;
+}
+.footer .social-network .fa-brands{
+    margin-right: 15px;
+    text-align: center;
+    color: #005f73;
+}
+.footer .social-network .fa-brands:hover{
+    color: #fff;
+
+}
+
