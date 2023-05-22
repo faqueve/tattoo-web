@@ -82,7 +82,7 @@ body{
 .hero h1{
     font-size: 4em;
     text-shadow: black 0.1em 0.1em 0.2em;
-    color: #005f73;
+    color: #f8837d;
 }
 
 .hero p{
@@ -95,12 +95,12 @@ body{
     background: none;
     color: #e9d8a6;
     padding: 10px 20px;
-    border: 1px solid #005f73;
+    border: 1px solid #f8837d;
     border-radius: 30px;
     margin-top: 15px;
 }
 .hero .btn:hover{
-    background-color: #005f73;
+    background-color: #f8837d;
     color: #141414;
 }
 
@@ -219,7 +219,7 @@ body{
 .footer .social-network .fa-brands{
     margin-right: 15px;
     text-align: center;
-    color: #005f73;
+    color: #f8837d;
 }
 .footer .social-network .fa-brands:hover{
     color: #fff;
