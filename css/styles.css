@@ -12,7 +12,7 @@ body{
 }
 
 .nav-bar{
-    background-color: #181818;
+    background-color: #8d0801;
     display: grid;
     grid-template-columns: repeat(8, 1fr);
     align-items: center;
@@ -201,7 +201,7 @@ body{
     display: grid;
     height: 80px;
     align-items: center;
-    background-color: #181818;
+    background-color: #0a0908;
     color: #e9d8a6;
     grid-template-areas: 
     "follow me social-network";
